@@ -10,17 +10,20 @@ img{
 	height: auto;
 }
 .text-up{
+	color: #8d8c8c;
 	text-transform: uppercase;
 }
 .text-cap{
 	text-transform: capitalize;
 }
-.navbar-default .navbar-nav > li > a{
+.navbar{
+	color: #8d8c8c;
+}
+.nav-item {
 	color: #8d8c8c;
 	font-size: 18px;
 }
 .navbar-brand{
-	color: #8d8c8c;
 	font-size: 18px;
 	padding-right: 150px;
 }
@@ -33,6 +36,27 @@ img{
 	/*color: #d0cfce;*/
 	display: none;
 }
+
+.glyph-icon {
+	color: #1e7e34;
+	width:30px;
+	height:30px;
+}
+
+.spa-shell-chat {
+	bottom: 0;
+	right: 0;
+	width: 300px;
+	height: 90px;
+	/*background: #fdfcfb;*/
+	/*border-radius: 5px 0 0 0;*/
+	z-index: 1;
+	position: absolute;
+}
+
+/*.spa-shell-chat:hover {*/
+	/*background: #a00;*/
+/*}*/
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
