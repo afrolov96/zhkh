@@ -41,7 +41,7 @@
 <div class="container" style="padding-top: 30px">
     <div class="row">
         <div class="col-6">
-            <div class="card" style="width: 24rem;">
+            <div class="card" style="width: auto">
                 <div class="card-header">О проекте</div>
                 <div class="row">
                     <div class="col-3">
@@ -57,7 +57,7 @@
             </div>
         </div>
         <div class="col-6">
-            <div class="card" style="width: 24rem;">
+            <div class="card" style="width: auto">
                 <div class="card-header">Вход</div>
                 <div class="row">
                     <div class="col-12">
@@ -70,6 +70,13 @@
             </div>
         </div>
     </div>
+    <div class="row" style="padding-top: 20px">
+        <div class="col-12">
+            <div class="card" style="width: auto">
+                <div class="card-header">Популярные услуги</div>
+            </div>
+        </div>
+    </div>
 </div>
 
 <div id="chat" class="card spa-shell-chat" style="width: 18rem;">
@@ -79,13 +86,13 @@
         </div>
         <div id="chat-body" style="display: none">
             <div class="form-group">
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                <textarea id="textChatArea" class="form-control" rows="5"></textarea>
             </div>
             <div class="input-group mb-3">
-                <input type="text" class="form-control" placeholder="..." aria-label="Recipient's username"
+                <input id="textChatLine" type="text" class="form-control" placeholder="..." aria-label="Recipient's username"
                        aria-describedby="basic-addon2">
                 <div class="input-group-append">
-                    <button class="btn btn-outline-secondary" type="button">Ok</button>
+                    <button id="btnChatOk" class="btn btn-outline-secondary" type="button">Ok</button>
                 </div>
             </div>
         </div>
