@@ -45,7 +45,8 @@
                 <div class="card-header">О проекте</div>
                 <div class="row">
                     <div class="col-3">
-                        <img class="card-img-top" style="max-width: 150px; padding-top: 10px; padding-left: 10px; padding-bottom: 10px"
+                        <img class="card-img-top"
+                             style="max-width: 150px; padding-top: 10px; padding-left: 10px; padding-bottom: 10px"
                              src="img/logo.png" alt="Card image cap">
                     </div>
                     <div class="col-9">
@@ -62,7 +63,9 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="card-body">
-                            <p><button class="btn btn-outline-primary" type="button">Войти</button></p>
+                            <p>
+                                <button class="btn btn-outline-primary" type="button">Войти</button>
+                            </p>
                             <button class="btn btn-primary" type="button">Зарегистрироваться</button>
                         </div>
                     </div>
@@ -82,14 +85,17 @@
 <div id="chat" class="card spa-shell-chat" style="width: 18rem;">
     <div class="card-body">
         <div id="chatTitle" class="card-header">
-            Задайте ваш вопрос
+            <span style="padding-right: 40px;">Задайте ваш вопрос</span>
+
+            <img id="btnChatClose" style="width: 20px; height: 20px; display: none" src="png/glyphicons-193-remove-sign.png">
         </div>
         <div id="chat-body" style="display: none">
             <div class="form-group">
                 <textarea id="textChatArea" class="form-control" rows="5"></textarea>
             </div>
             <div class="input-group mb-3">
-                <input id="textChatLine" type="text" class="form-control" placeholder="..." aria-label="Recipient's username"
+                <input id="textChatLine" type="text" class="form-control" placeholder="..."
+                       aria-label="Recipient's username"
                        aria-describedby="basic-addon2">
                 <div class="input-group-append">
                     <button id="btnChatOk" class="btn btn-outline-secondary" type="button">Ok</button>
