@@ -54,23 +54,23 @@ img {
     height: 30px;
 }
 
-.card {
-    /*background-color: rgba(141, 140, 140, 0.95);*/
-    /*color:white;*/
-    height: 8rem;
-    width: auto;
-}
+/*.card {*/
+    /*!*background-color: rgba(141, 140, 140, 0.95);*!*/
+    /*!*color:white;*!*/
+    /*height: 8rem;*/
+    /*width: auto;*/
+/*}*/
 
-.card-header, .card-footer {
-    opacity: 1
-}
+/*.card-header, .card-footer {*/
+    /*opacity: 1*/
+/*}*/
 
 .spa-shell-chat {
     bottom: 0;
     right: 0;
-    width: 18rem;
-    height: 5rem;
-    /*background: #fdfcfb;*/
+    /*width: 18rem;*/
+    /*height: 5rem;*/
+    /*!*background: #fdfcfb;*!*/
     /*border-radius: 5px 0 0 0;*/
     z-index: 1;
     position: absolute;

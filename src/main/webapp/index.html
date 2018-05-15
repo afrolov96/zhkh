@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/simplex/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
     <title>ОН-ЛАЙН СУБСИИ ЖКХ</title>
 </head>
 <body>
 <header>
     <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-info text-up">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-up">
             <a class="navbar-brand" href="#">он-лайн субсии жкх</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02"
                     aria-controls="navbarColor02"
@@ -51,14 +51,14 @@
                 </div>
                 <div class="row" align="right">
                     <div class="col-12">
-                        <button class="btn btn-info btn-sm">Версия для слабовидящих</button>
+                        <button class="btn btn-dark btn-sm">Версия для слабовидящих</button>
                     </div>
                 </div>
             </div>
         </div>
 
         <div class="col-md-6 col-sm-12">
-            <div class="card border-light mb-3">
+            <div class="card bg-light mb-3">
                 <div class="card-header">О проекте</div>
                 <div class="card-body">
                     <img src="svg/si-glyph-birthday-cake.svg"
@@ -68,32 +68,30 @@
             </div>
         </div>
         <div class="col-md-6 col-sm-12">
-            <div class="card border-light mb-3" style="width: auto; height: 8rem">
+            <div class="card bg-light mb-3" style="width: auto; height: 8rem">
                 <div class="card-header">Личный кабинет</div>
                 <div class="card-body">
                     <button class="btn btn-outline-dark btn-sm" type="button">Войти</button>
-                    <button class="btn btn-info btn-sm" type="button">Зарегистрироваться</button>
+                    <button class="btn btn-dark btn-sm" type="button">Зарегистрироваться</button>
                 </div>
             </div>
         </div>
 
         <div class="col-md-12 col-sm-12">
-            <div class="card border-light" style="width: auto">
+            <div class="card bg-light" style="width: auto">
                 <div class="card-header">Популярные услуги</div>
                 <div class="card-body">
                     <div class="row">
-                        <div class="col-6">
+                        <div class="col-md-6 col-sm-12 mb-1">
                             <a href="#">Услуга 1</a>
                         </div>
-                        <div class="col-6">
+                        <div class="col-md-6 col-sm-12 mb-1">
                             <a href="#">Услуга 3</a>
                         </div>
-                    </div>
-                    <div class="row" style="padding-top: 10px">
-                        <div class="col-6">
+                        <div class="col-md-6 col-sm-12 mb-1">
                             <a href="#">Услуга 2</a>
                         </div>
-                        <div class="col-6">
+                        <div class="col-md-6 col-sm-12 mb-1">
                             <a href="#">Услуга 4</a>
                         </div>
                     </div>
@@ -101,12 +99,16 @@
             </div>
         </div>
 
-        <div class="col-md-12 col-sm-12" align="center">
-            <button class="btn  btn-light btn-lg" style="min-width: 20rem">ВСЕ УСЛУГИ</button>
+        <div class="col-md-12 col-sm-12">
+            <div class="card bg-light text-center">
+                <div class="card-body">
+                    <a href="#">ВСЕ УСЛУГИ</a>
+                </div>
+            </div>
         </div>
 
         <div class="col-md-6 col-sm-12">
-            <div class="card border-light mb-3" style="width: auto; height: 15rem">
+            <div class="card bg-light mb-3" style="width: auto; height: 15rem">
                 <div class="card-header">Частые вопросы и ответы</div>
                 <div class="card-body">
                     <p class="card-text">Что? Где? Когда?</p>
@@ -114,7 +116,7 @@
             </div>
         </div>
         <div class="col-md-6 col-sm-12">
-            <div class="card border-light mb-3" style="width: auto; height: 15rem">
+            <div class="card bg-light mb-3" style="width: auto; height: 15rem">
                 <div class="card-header">Контакты</div>
                 <div class="card-body">
                     <p class="card-text">Москва, Кремль. ВВП.</p>
@@ -122,30 +124,32 @@
             </div>
         </div>
     </div>
-</div>
 
-<div id="chat" class="card spa-shell-chat">
-    <div class="card-body">
-        <div id="chatTitle" class="card-header">
-            <span style="padding-right: 40px;">Задайте ваш вопрос</span>
-            <img id="btnChatClose" style="width: 20px; height: 20px; display: none"
-                 src="png/glyphicons-193-remove-sign.png">
-        </div>
-        <div id="chat-body" style="display: none">
-            <div class="form-group">
-                <textarea id="textChatArea" class="form-control" rows="5"></textarea>
+    <div id="chat" class="card bg-light spa-shell-chat">
+        <div class="card-body">
+            <div id="chatTitle" class="card-header">
+                <span style="padding-right: 40px;">Задайте ваш вопрос</span>
+                <img id="btnChatClose" style="width: 20px; height: 20px; display: none"
+                     src="png/glyphicons-193-remove-sign.png">
             </div>
-            <div class="input-group mb-3">
-                <input id="textChatLine" type="text" class="form-control" placeholder="..."
-                       aria-label="Recipient's username"
-                       aria-describedby="basic-addon2">
-                <div class="input-group-append">
-                    <button id="btnChatOk" class="btn btn-outline-primary" type="button">Ok</button>
+            <div id="chat-body" style="display: none">
+                <div class="form-group">
+                    <textarea id="textChatArea" class="form-control" rows="5"></textarea>
+                </div>
+                <div class="input-group mb-3">
+                    <input id="textChatLine" type="text" class="form-control" placeholder="..."
+                           aria-label="Recipient's username"
+                           aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                        <a href="#" class="btn btn-dark">OK</a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
 </div>
+
 
 <script src="js/jq/jquery.min.js"></script>
 <script src="js/bootstrap/bootstrap.js"></script>
