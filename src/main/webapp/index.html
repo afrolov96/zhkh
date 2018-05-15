@@ -6,18 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
-          integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/simplex/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
     <title>ОН-ЛАЙН СУБСИИ ЖКХ</title>
 </head>
 <body>
 <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary text-up">
-        <div class="container">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-up">
             <a class="navbar-brand" href="#">он-лайн субсии жкх</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse" id="navbarColor02">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="#">услуги</a>
@@ -25,20 +28,15 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">поддержка</a>
                     </li>
-                    <li class="nav-item">
-                        <form class="form-inline my-2 my-lg-0">
-                            <input class="form-control mr-sm-2" type="search" placeholder="Поиск" aria-label="Search">
-                            <img class="glyph-icon" src="png/glyphicons-28-search.png"/>
-                            <span class="glyphicons glyphicons-search"></span>
-                        </form>
-                    </li>
-                    <li class="nav-item" style="padding-left: 70px">
-                        <a class="nav-link" href="#">личный кабинет</a>
-                    </li>
                 </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Поиск">
+                    <button class="btn btn-secondary my-2 my-sm-0" type="submit">Поиск</button>
+                </form>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </div>
+
 </header>
 
 <div class="container" style="padding-top: 30px">
@@ -48,12 +46,12 @@
                 <div class="row" align="right">
                     <div class="col-12">
                         <span style="padding-right: 10px">Регион:</span>
-                        <button class="btn btn-light btn-sm">RUS</button>
+                        <button class="btn btn-light btn-sm">Екатеринбург</button>
                     </div>
                 </div>
                 <div class="row" align="right">
                     <div class="col-12">
-                        <button class="btn btn-danger btn-sm">Версия для слабовидящих</button>
+                        <button class="btn btn-info btn-sm">Версия для слабовидящих</button>
                     </div>
                 </div>
             </div>
@@ -61,36 +59,26 @@
     </div>
     <div class="row">
         <div class="col-6">
-            <div class="card" style="width: auto">
+            <div class="card border-light mb-3" style="width: auto; height: 8rem">
                 <div class="card-header">О проекте</div>
-                <div class="row">
-                    <div class="col-3">
-                        <img class="card-img-top"
-                             style="max-width: 150px; padding-top: 10px; padding-left: 10px; padding-bottom: 10px"
-                             src="img/logo.png" alt="Card image cap">
-                    </div>
-                    <div class="col-9">
-                        <div class="card-body">
-                            <p class="card-text">Оформление субсидий ЖКХ в он-лайне</p>
-                        </div>
-                    </div>
+                <div class="card-body">
+                    <img src="svg/si-glyph-birthday-cake.svg"
+                         style="width: 4rem; height: 4rem; ">
+                    Подача документов для получения субсидий ЖКХ
                 </div>
             </div>
         </div>
         <div class="col-6">
-            <div class="card" style="width: auto">
-                <div class="card-header">Вход</div>
-                <div class="row">
-                    <div class="col-12">
-                        <div class="card-body">
-                            <p>
-                                <button class="btn btn-outline-primary btn-sm" type="button">Войти</button>
-                            </p>
-                            <button class="btn btn-primary btn-sm" type="button">Зарегистрироваться</button>
-                        </div>
-                    </div>
+
+            <div class="card bg-light mb-3" style="width: auto; height: 8rem">
+                <div class="card-header">Личный кабинет</div>
+                <div class="card-body">
+                    <button class="btn btn-outline-dark btn-sm" type="button">Войти</button>
+                    <button class="btn btn-info btn-sm" type="button">Зарегистрироваться</button>
                 </div>
             </div>
+
+
         </div>
     </div>
     <div class="row" style="padding-top: 20px">
@@ -120,23 +108,23 @@
     </div>
     <div class="row" style="padding-top: 10px" align="center">
         <div class="col-12">
-            <button class="btn btn-outline-primary btn-light btn-lg">ВСЕ УСЛУГИ</button>
+            <button class="btn  btn-light btn-lg" style="min-width: 20rem">ВСЕ УСЛУГИ</button>
         </div>
     </div>
     <div class="row" style="padding-top: 10px">
         <div class="col-6">
-            <div class="card" style="width: auto">
+            <div class="card border-light mb-3" style="width: auto; height: 15rem">
                 <div class="card-header">Частые вопросы и ответы</div>
                 <div class="card-body">
-                    <p class="card-text">что где когда</p>
+                    <p class="card-text">Что? Где? Когда?</p>
                 </div>
             </div>
         </div>
         <div class="col-6">
-            <div class="card" style="width: auto">
+            <div class="card border-light mb-3" style="width: auto; height: 15rem">
                 <div class="card-header">Контакты</div>
                 <div class="card-body">
-                    <p>Москва, Кремль. ВВП.</p>
+                    <p class="card-text">Москва, Кремль. ВВП.</p>
                 </div>
             </div>
         </div>
