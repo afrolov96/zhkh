@@ -2,8 +2,12 @@ body{
 	font-family: 'Open Sans', sans-serif;
 	font-size: 12px;
 	color: #868585;
-	background: #868585;
-	font-weight: normal;
+    background: url('http://placehold.it/1920x1080') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    font-weight: normal;
 }
 img{
 	max-width: 100%;
