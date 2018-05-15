@@ -2,7 +2,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-size: 12px;
     color: #868585;
-    background: url('../img/photo/moscow.jpg') no-repeat center center fixed;
+    /*background: url('../img/photo/moscow.jpg') no-repeat center center fixed;*/
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -55,8 +55,10 @@ img {
 }
 
 .card {
-    background-color: rgba(141, 140, 140, 0.95);
-    color:white;
+    /*background-color: rgba(141, 140, 140, 0.95);*/
+    /*color:white;*/
+    height: 8rem;
+    width: auto;
 }
 
 .card-header, .card-footer {
@@ -66,8 +68,8 @@ img {
 .spa-shell-chat {
     bottom: 0;
     right: 0;
-    width: 300px;
-    height: 90px;
+    width: 18rem;
+    height: 5rem;
     /*background: #fdfcfb;*/
     /*border-radius: 5px 0 0 0;*/
     z-index: 1;
@@ -85,6 +87,10 @@ img {
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
+    .spa-shell-chat{
+        z-index: auto;
+        position: relative;
+    }
     .login {
         display: block;
     }
